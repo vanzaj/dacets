@@ -1,0 +1,8 @@
+#!/usr/bin/env python
+#
+# command line interface
+
+import dacets
+
+if __name__ == '__main__':
+    dacets.main()
