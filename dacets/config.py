@@ -20,7 +20,7 @@ def _find_config(cf_path=''):
     home_conf = os.path.join(os.environ.get('HOME'), '.config', 'dacets')
     home_yml = os.path.join(home_conf, local_yml)
     home_ini = os.path.join(home_conf, local_ini)
-    if os.path.isfile(local_yml): 
+    if os.path.isfile(local_yml):
         path = os.path.abspath(local_yml)
     elif os.path.isfile(local_ini):
         path = os.path.abspath(local_ini)
@@ -65,7 +65,8 @@ class Config(object):
             print(e)
 
     def set(self, section, key, val):
-        if not self.conf.get(section, None):
+        if self.conf.get(section, None) is None:
+            # keep attr based access to 1st level (section)
             self.conf[section] = {}
         self.conf[section].update({key: value})
 
