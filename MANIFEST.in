@@ -1,0 +1,5 @@
+include LICENSE.txt
+include README.md
+recursive-include docs *.rst
+include docs/Makefile
+include dacets/tests/mocks/*
