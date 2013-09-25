@@ -1,7 +1,7 @@
 import os
 import yaml
 from ConfigParser import SafeConfigParser
-from .utils import AttrDict
+from .utils import ADict
 
 
 def _find_config(cf_path=''):
@@ -42,7 +42,7 @@ class Config(object):
     def __init__(self, cf_path=''):
         self.path = _find_config(cf_path)
         self.format = os.path.splitext(self.path)[1][1:]
-        self.conf = AttrDict()
+        self.conf = ADict()
         self.load()
 
     def load(self):
@@ -55,7 +55,7 @@ class Config(object):
         try:
             parser = SafeConfigParser()
             parser.read(self.path)
-            self.conf = AttrDict()
+            self.conf = ADict()
             for sect in parser.sections():
                 self.conf[sect] = {}
                 for name, val in parser.items(sect):

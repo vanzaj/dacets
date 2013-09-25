@@ -10,9 +10,10 @@ DACETS - facets of datasets
 """
 
 import config
+import utils
 
 __title__ = 'dacets'
 __version__ = '0.0.1'
 __author__ = 'Ivan Zimine'
 __license__ = 'Simplified BSD'
-__copyright__ = 'Copyright 2013 Ivan Zimine'
+__copyright__ = 'Copyright © 2013 Ivan Zimine'
