@@ -26,6 +26,7 @@ setup(
             'Programming Language :: Python :: 2.7',
         ],
     install_requires=[
+        'docopt >= 0.6.1',
         'Sphinx >= 1.1.3',
         'PyYAML >= 3.10',
     ],
