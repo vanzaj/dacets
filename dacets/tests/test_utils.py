@@ -5,6 +5,18 @@ from dacets.utils import *
 
 here = os.path.dirname(__file__)
 
+
+def test_mkdir_p():
+    os.chdir(here)
+    p1 = 'test_mkdir_p'
+    assert os.path.isdir(p1) is False
+    p2 = os.path.join(p1, 'some', 'junk')
+    mkdir_p(p2)
+    assert os.path.isdir(p2) is True
+    os.removedirs(p2)
+    assert os.path.isdir(p1) is False
+
+
 class TestADict(unittest.TestCase):
 
     def test_ADict_set_get(self):
@@ -26,13 +38,10 @@ class TestADict(unittest.TestCase):
         self.assertFalse('a' in d.keys())
 
 
-def test_mkdir_p():
-    os.chdir(here)
-    p1 = 'test_mkdir_p'
-    assert os.path.isdir(p1) is False
-    p2 = os.path.join(p1, 'some', 'junk')
-    mkdir_p(p2)
-    assert os.path.isdir(p2) is True
-    os.removedirs(p2)
-    assert os.path.isdir(p1) is False
+class TestConfig(unittest.TestCase):
 
+    def test_config_yml(self):
+        cf = os.path.join(here, 'mocks', 'config.yml')
+        c = Config(cf)
+        self.assertEqual(c.path, cf)
+        self.assertTrue('Feynman' in c.conf.user['name'])

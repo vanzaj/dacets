@@ -9,7 +9,6 @@ DACETS - facets of datasets
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 """
 
-import config
 import utils
 
 __title__ = 'dacets'
