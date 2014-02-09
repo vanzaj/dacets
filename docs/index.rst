@@ -13,7 +13,7 @@ for collaborations.
 
 It is based on ideas of software package managment (deb, rpm, pip, npm,  etc)
 and version control systems (git and mercurial). It is similar to dpm_, but with
-greater focus on academic research data (physics, chemistry, biology) and
+greater focus on academic research data (physics, chemistry, biology, ...) and
 capture of detailed experimental conditons.
 
 .. _dpm: http://dpm.readthedocs.org/en/latest/
