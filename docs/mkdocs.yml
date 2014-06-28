@@ -1,0 +1,7 @@
+site_name: Dacets
+theme: readthedocs
+docs_dir: src
+site_dir: build
+pages:
+  - ['index.md', 'Main']
+  - ['prior-art.md', 'Prior art']
