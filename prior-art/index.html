@@ -4,15 +4,15 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dacets</title>
+  <title>Prior art - Dacets</title>
 
   
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
-  <link rel="stylesheet" href="./css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
   
 
-  <script type="text/javascript" src="./js/theme.js"></script>
+  <script type="text/javascript" src="../js/theme.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
   
 
@@ -30,7 +30,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href="." class="icon icon-home"> Dacets</a>
+        <a href=".." class="icon icon-home"> Dacets</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -43,27 +43,20 @@
       <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
        <ul class="current">
 
-    <li class="toctree-l1 current">
-        <a class="current" href=".">Main</a>
-        
-            <ul>
-            
-                <li class="toctree-l2"><a href="#welcome-to-dacets">Welcome to Dacets</a></li>
-                
-            
-                <li class="toctree-l2"><a href="#quick-start">Quick start</a></li>
-                
-                    <li><a class="toctree-l3" href="#installation">Installation</a></li>
-                
-                    <li><a class="toctree-l3" href="#basic-use">Basic use</a></li>
-                
-            
-            </ul>
+    <li class="toctree-l1 ">
+        <a class="" href="..">Main</a>
         
     </li>
 
-    <li class="toctree-l1 ">
-        <a class="" href="prior-art/">Prior art</a>
+    <li class="toctree-l1 current">
+        <a class="current" href="./">Prior art</a>
+        
+            <ul>
+            
+                <li class="toctree-l2"><a href="#prior-art">Prior art</a></li>
+                
+            
+            </ul>
         
     </li>
 
@@ -81,7 +74,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="icon icon-reorder"></i>
-        <a href="."></a>
+        <a href=".."></a>
       </nav>
 
       
@@ -89,8 +82,8 @@
         <div class="rst-content">
           <div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
-    <li><a href=".">Docs</a> &raquo;</li>
-    <li>Main</li>
+    <li><a href="..">Docs</a> &raquo;</li>
+    <li>Prior art</li>
       <li class="wy-breadcrumbs-aside">
         
       </li>
@@ -98,45 +91,17 @@
   <hr/>
 </div>
           <div role="main">
-            <pre class="prettyprint well"><code>   _ \   \   __| __|__ __| __|
-   |  | _ \ (    _|    | \__ \
-  ___/_/  _\___|___|  _| ____/
-</code></pre>
-
-<h1 id="welcome-to-dacets">Welcome to Dacets</h1>
-<p>Dacets is a tool for scientists (pros and amateurs) to facilitate handling and
-tracking of research data files, associated experimental metadata and random
-notes: where the files came from, where they are stored, what's inside, to which
-project they belong, etc. It should be useful for individual use as well as for
-collaborations.</p>
-<h1 id="quick-start">Quick start</h1>
-<h2 id="installation">Installation</h2>
-<pre class="prettyprint well"><code>$ pip install dacets
-$ dct -h
-</code></pre>
-
-<h2 id="basic-use">Basic use</h2>
-<p>From shell</p>
-<pre class="prettyprint well"><code>$ dct list
-$ dct search lena
-</code></pre>
-
-<p>From python</p>
-<pre class="prettyprint well"><code>from dacets import Dacets
-
-dct = Dacets()
-dct.list()
-dct.search('lena')
-</code></pre>
-
+            <h1 id="prior-art">Prior art</h1>
+<p>Dacets is based on ideas of software package managment (deb, rpm, npm, pip,
+etc), and projects like <a href="http://dpm.readthedocs.org/en/latest/">dpm</a>. </p>
 
           </div>
           <footer>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="prior-art/" class="btn btn-neutral float-right" title="Prior art"/>Next <span class="icon icon-circle-arrow-right"></span></a>
       
+        <a href=".." class="btn btn-neutral" title="Main"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
